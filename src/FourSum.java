@@ -35,6 +35,11 @@ public class FourSum {
     public static void main(String[] args) {
         int[] arr = {1,0,-1,0,-2,2};
         int target = 0;
+        long startTime = System.nanoTime();
         System.out.println(fourSum(arr, target));
+        long endTime = System.nanoTime();
+        double totalTime = (endTime - startTime) / 1e9;
+
+        System.out.println("Total time : " + totalTime + " seconds");
     }
 }
